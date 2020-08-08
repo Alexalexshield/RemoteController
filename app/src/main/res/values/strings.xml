@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RemoteController</string>
+    <string name="version">v1.0.0</string>
+    <string name="idFA2">ID FA2</string>
+    <string name="idFA">ID FA</string>
+    <string name="alarm_fa2">Alarm FA2</string>
+    <string name="alarm_fa">Alarm FA</string>
+</resources>
