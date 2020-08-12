@@ -5,4 +5,15 @@
     <string name="idFA">ID FA</string>
     <string name="alarm_fa2">Alarm FA2</string>
     <string name="alarm_fa">Alarm FA</string>
+    <string name="rlc_calc">RLC Calc</string>
+    <string name="inductance">Inductance</string>
+    <string name="calculator">Calculator</string>
+    <string name="uh">uH</string>
+    <string name="r">R</string>
+    <string name="resistance">Resistance</string>
+    <string name="uc">uC</string>
+    <string name="capacitance">Capacitance</string>
+    <string name="hz">Hz</string>
+    <string name="frequency">Frequency</string>
+    <string name="tone_generator">Tone Generator</string>
 </resources>

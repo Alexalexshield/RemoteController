@@ -3,6 +3,7 @@ package ru.mineradio.remotecontroller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -15,10 +16,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button butAlarmFA;
-    public Button butAlarmFA2;
-    public Button butIDFA;
-    public Button butIDFA2;
+    public Button butRlcCalc;
+    public Button butAlarmFA,butAlarmFA2;
+    public Button butIDFA,butIDFA2;
+
 
     // Stream type.
     private static final int streamType = AudioManager.STREAM_MUSIC;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private float volume;
     private boolean loaded;
     // Maximum sound stream.
-    private static final int MAX_STREAMS = 5;
+    private static final int MAX_STREAMS = 1;
 
 
     @Override
@@ -41,10 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
         audioInit();
 
+        butRlcCalc = findViewById(R.id.rlccalc);
         butAlarmFA = findViewById(R.id.butAlarmFA);
         butAlarmFA2 = findViewById(R.id.butAlarmFA2);
         butIDFA = findViewById(R.id.butIDFA);
         butIDFA2 = findViewById(R.id.butIDFA2);
+
+        butRlcCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RlcCalc.class);
+                startActivity(intent);
+            }
+        });
 
         butAlarmFA.setOnClickListener(new View.OnClickListener() {
             @Override
