@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/tonegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tone_gen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butAlarmFA" />
+
     <TextView
         android:id="@+id/Title"
         android:layout_width="wrap_content"
@@ -79,13 +89,5 @@
         android:text="@string/rlc_calc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/butAlarmFA" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

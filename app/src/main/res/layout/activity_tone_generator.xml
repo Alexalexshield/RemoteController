@@ -10,38 +10,67 @@
         android:id="@+id/seekBarFrequency"
         android:layout_width="201dp"
         android:layout_height="28dp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="116dp" />
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFrequency" />
 
     <TextView
         android:id="@+id/textFrequency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/frequency"
-        tools:layout_editor_absoluteX="59dp" />
+        app:layout_constraintStart_toStartOf="@+id/seekBarFrequency"
+        app:layout_constraintTop_toBottomOf="@+id/titleToneActivity" />
 
     <TextView
         android:id="@+id/titleToneActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/tone_generator"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="24dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butToneM1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/m1"
+        app:layout_constraintStart_toStartOf="@+id/seekBarFrequency"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarFrequency" />
 
     <Button
         android:id="@+id/butToneM2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="173dp" />
+        android:text="@string/m2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butToneM1" />
+
+    <Button
+        android:id="@+id/butToneM3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/m3"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarFrequency"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butToneM1" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="69dp"
-        android:layout_height="29dp"
+        android:id="@+id/editCurrentFreq"
+        android:layout_width="65dp"
+        android:layout_height="41dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/hz"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="192dp" />
+        app:layout_constraintEnd_toEndOf="@+id/seekBarFrequency"
+        app:layout_constraintTop_toTopOf="@+id/textFrequency" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

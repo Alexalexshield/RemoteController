@@ -16,4 +16,8 @@
     <string name="hz">Hz</string>
     <string name="frequency">Frequency</string>
     <string name="tone_generator">Tone Generator</string>
+    <string name="m1">M1</string>
+    <string name="m2">M2</string>
+    <string name="m3">M3</string>
+    <string name="tone_gen">tone gen</string>
 </resources>

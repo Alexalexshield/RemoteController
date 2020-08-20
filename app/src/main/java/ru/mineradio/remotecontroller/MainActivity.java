@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button butRlcCalc;
+    public Button butRlcCalc, butToneGen;
     public Button butAlarmFA,butAlarmFA2;
     public Button butIDFA,butIDFA2;
 
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         audioInit();
 
         butRlcCalc = findViewById(R.id.rlccalc);
+        butToneGen = findViewById(R.id.tonegen);
         butAlarmFA = findViewById(R.id.butAlarmFA);
         butAlarmFA2 = findViewById(R.id.butAlarmFA2);
         butIDFA = findViewById(R.id.butIDFA);
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RlcCalc.class);
+                startActivity(intent);
+            }
+        });
+
+        butToneGen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ToneGenerator.class);
                 startActivity(intent);
             }
         });
